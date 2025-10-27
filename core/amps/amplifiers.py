@@ -1,8 +1,9 @@
 from core import BaseModel
+from .amp_types import AmpType
 
 
 class Amplifier(BaseModel):
-    def __init__(self, name: str, amp_type, power: int):
+    def __init__(self, name: str, amp_type: AmpType, power: int):
         super().__init__(name)
         self.amp_type = amp_type
         self.power = power
