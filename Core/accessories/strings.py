@@ -1,8 +1,9 @@
-from core import BaseModel, StringType
+from core import BaseModel
+
 
 
 class GuitarString(BaseModel):
-    def __init__(self, name: str, gauge: float, type: StringType):
+    def __init__(self, name: str, gauge: float, type: str):
         super().__init__(name)
         self.gauge = gauge  # in inches
         self.type = type  # e.g., 'nylon', 'steel', 'bronze'
