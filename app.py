@@ -1,8 +1,8 @@
 from core import Guitar, GuitarType, Amplifier, AmpType, GuitarString, StringType
 
+
 electric_guitar = GuitarType(name="Electric")
 ibanez = Guitar(name="Ibanez RG", guitar_type=electric_guitar, number_of_strings=6)
-
 if not ibanez.is_deleted:
     print(ibanez)
     print(ibanez.created_at)
